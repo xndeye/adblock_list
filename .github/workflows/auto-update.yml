@@ -7,7 +7,7 @@ on:
       - '.github/**'
       - '.devcontainer/**'
       - 'LICENSE'
-    branches: [ v2 ]
+    branches: [ beta ]
   schedule:
     - cron: 0 */8 * * *
   workflow_dispatch:
@@ -46,7 +46,7 @@ jobs:
 
       - name: Mirror Refresh
         if: steps.commit.outputs.changes_detected == 'true'
-        run: sleep 10 && curl 'https://purge.jsdelivr.net/gh/${{github.repository}}@v2/rule'
+        run: sleep 10 && curl 'https://purge.jsdelivr.net/gh/${{github.repository}}@beta/rule'
 
       - name: Delete Workflow Runs
         uses: Mattraks/delete-workflow-runs@v2
