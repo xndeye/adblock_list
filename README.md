@@ -5,6 +5,8 @@
 > AdGuard Home 推荐使用：`dns.txt`  
 > AdAway 等其他仅支持 hosts 的工具，推荐使用：`hosts.txt`
 
+> ### 👉 [更全面的格式支持](https://github.com/xndeye/adblock_list/tree/beta) (测试中)
+
 | 名称            | 说明                                   |                                       Github                                        |                                                 ghproxy                                                 |
 |---------------|:-------------------------------------|:-----------------------------------------------------------------------------------:|:-------------------------------------------------------------------------------------------------------:|
 | `all.txt`     | 完整规则，适用于 `AdGuard`、`AdBlock`等        |   [Link](https://raw.githubusercontent.com/xndeye/adblock_list/main/rule/all.txt)   |   [Link](https://ghproxy.net/https://raw.githubusercontent.com/xndeye/adblock_list/main/rule/all.txt)   |
