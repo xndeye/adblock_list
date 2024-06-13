@@ -7,26 +7,21 @@ on:
       - '.github/**'
       - '.devcontainer/**'
       - 'LICENSE'
-    branches: [ main ]
   schedule:
-    - cron: 0 */8 * * *
+    - cron: 0 */12 * * *
   workflow_dispatch:
 
-env:
-  TZ: Asia/Shanghai
-
 jobs:
-  Update_Filters:
+  main:
     runs-on: ubuntu-latest
     permissions:
       contents: write
       actions: write
-
     steps:
       - name: Checkout
         uses: actions/checkout@v4
         with:
-          ref: ${{ github.head_ref }}
+          ref: main
 
       - name: Set up JDK 21
         uses: actions/setup-java@v4
@@ -44,11 +39,42 @@ jobs:
         with:
           commit_message: 🚀 CI Updated
 
-      - name: Mirror Refresh
-        if: steps.commit.outputs.changes_detected == 'true'
-        run: sleep 10 && curl 'https://purge.jsdelivr.net/gh/${{github.repository}}/rule'
+  beta:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      actions: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          ref: beta
+      - name: Set up JDK 21
+        uses: actions/setup-java@v4
+        with:
+          java-version: '21'
+          distribution: 'temurin'
+          cache: maven
 
-      - name: Delete Workflow Runs
+      - name: Run Jar
+        run:  mvn spring-boot:run
+
+      - name: Commit Changes
+        id: commit
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: 🚀 CI Updated
+
+  clean:
+    needs:
+      - main
+      - beta
+    runs-on: ubuntu-latest
+    permissions:
+      actions: write
+      contents: read
+    steps:
+      - name: Delete workflow runs
         uses: Mattraks/delete-workflow-runs@v2
         with:
           token: ${{secrets.GITHUB_TOKEN}}
