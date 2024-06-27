@@ -1,5 +1,5 @@
 [xndeye private adblock list]
-! Last Modified: 2024-04-12 00:00:00
+! Last Modified: 2024-06-27 00:00:00
 ! Homepage: https://github.com/xndeye/adblock_list/v2
 ! Description: 自用补充规则, 完全主观, 不定期更新.
 #-------------白名单---------------
@@ -24,3 +24,10 @@
 appinn.com##.featured-section
 appinn.com###sidebar.wp-block-image, .size-full
 appinn.com###latest-posts .latestPost:nth-child(-n+3)
+springdoc.cn/ad/
+susuifa.com##.slider-row-1
+susuifa.com##.single-top-html
+susuifa.com##.post-note
+susuifa.com##.single-bottom-html
+doc.hutool.cn##.hutool-top-zz
+doc.hutool.cn##.custom-html-window, .custom-html-window-lb
