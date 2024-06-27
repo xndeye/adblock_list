@@ -1,11 +1,11 @@
 ## AbBlock List
 
-广告过滤规则整合，使用 [fordes123/ad-filters-subscriber](https://github.com/fordes123/ad-filters-subscriber) 定时更新
+广告过滤规则整合，使用 [fordes123/ad-filters-subscriber v1](https://github.com/fordes123/ad-filters-subscriber/tree/main) 构建
 > AdGuard 客户端 (软件、扩展)、AdBlock、AdBlockPlus、uBlock Origin 推荐使用：`all.txt`  
 > AdGuard Home 推荐使用：`dns.txt`  
 > AdAway 等其他仅支持 hosts 的工具，推荐使用：`hosts.txt`
 
-> ### 👉 [更全面的格式支持](https://github.com/xndeye/adblock_list/tree/beta) (测试中)
+👉 v2版本已支持多格式规则转换 [🔗点此查看](https://github.com/xndeye/adblock_list/tree/beta) (测试中)
 
 | 名称            | 说明                                   |                                       Github                                        |                                                 ghproxy                                                 |
 |---------------|:-------------------------------------|:-----------------------------------------------------------------------------------:|:-------------------------------------------------------------------------------------------------------:|
