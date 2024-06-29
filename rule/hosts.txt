@@ -1,6 +1,6 @@
 [xndeye Adblock List]
 ! Title: hosts.txt
-! Last Modified: 2024-06-29 00:36:37
+! Last Modified: 2024-06-29 12:14:28
 ! Homepage: https://github.com/fordes123/ad-filters-subscriber/
 
 127.0.0.1 localhost
@@ -763,6 +763,7 @@
 127.0.0.1 config.unityads.unitychina.cn
 127.0.0.1 api.openinstall.io
 127.0.0.1 ads.oneway.mobi
+||192.168.112.2o7.net^
 127.0.0.1 ads.oway.mobi
 127.0.0.1 owads.audioadx.com
 127.0.0.1 p3.adkwai.com
@@ -1650,4 +1651,3 @@
 127.0.0.1 hzs9.cnzz.com
 127.0.0.1 hzvs1.cnzz.com
 127.0.0.1 pcookie.cnzz.com
-||192.168.112.2o7.net^
