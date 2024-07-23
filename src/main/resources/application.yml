@@ -70,6 +70,10 @@ application:
         path: https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/multi.txt
         type: easylist
 
+      - name: xndeye web-ad-rule
+        path: https://raw.githubusercontent.com/xndeye/web-ad-rule/master/easylist.txt
+        type: easylist
+
     #本地规则文件
     local:
       - name: 'xndeye private adblock list'
