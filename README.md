@@ -3,8 +3,6 @@
 广告过滤规则整合，使用 [fordes123/ad-filters-subscriber v2](https://github.com/fordes123/ad-filters-subscriber/tree/v2)
 构建
 
-> ⚠️ 此版本尚在测试中，规则转换错误请反馈至 [此处](https://github.com/fordes123/ad-filters-subscriber/issues)
-
 | 文件              | 适用                          |        github        |         ghproxy          |         jsdelivr          |
 |-----------------|:----------------------------|:--------------------:|:------------------------:|:-------------------------:|
 | `easylist.txt`  | AdGuard、AdBlock 等主流去广告扩展和程序 | [link][easylist-raw] | [link][easylist-ghproxy] | [link][easylist-jsdelivr] |
