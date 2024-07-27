@@ -105,6 +105,11 @@ application:
           - basic
           - wildcard
 
+      - name: modify.txt
+        type: easylist
+        filter:
+          - unknown
+
       - name: dnsmasq.conf
         type: dnsmasq
 
