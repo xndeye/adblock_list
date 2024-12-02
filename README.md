@@ -67,7 +67,7 @@
     <li><a href="https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_224_Chinese/filter.txt">AdGuard 中文过滤器</a></li>
     <li><a href="https://github.com/jdlingyu/ad-wars">ad-wars</a></li>
     <li><a href="https://github.com/TG-Twilight/AWAvenue-Adblock-Rule">AWAvenue-Adblock-Rule</a></li>
-    <li><a href="https://raw.githubusercontent.com/Noyllopa/NoAppDownload/master/NoAppDownload.txt">NoAppDownload</a></li>\
+    <li><a href="https://raw.githubusercontent.com/Noyllopa/NoAppDownload/master/NoAppDownload.txt">NoAppDownload</a></li>
     <li><a href="https://github.com/xndeye/web-ad-rule">xndeye/web-ad-rule</a></li>
     <li><a href="https://github.com/xinggsf/Adblock-Plus-Rule">xinggsf/Adblock-Plus-Rule</a></li>
     <li><a href="https://github.com/damengzhu/banad">damengzhu/banad</a></li>
