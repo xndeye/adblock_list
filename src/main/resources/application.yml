@@ -64,21 +64,21 @@ application:
         path: https://raw.githubusercontent.com/Noyllopa/NoAppDownload/master/NoAppDownload.txt
         type: easylist
 
-      - name: Cats-Team AdBlock List Lite
-        path: https://raw.githubusercontent.com/Cats-Team/AdRules/main/adblock_lite.txt
-        type: easylist
-
-      - name: 1Hosts (Lite)
-        path: https://o0.pages.dev/Lite/adblock.txt
-        type: easylist
-
-      - name: hagezi/dns-blocklists pro
-        path: https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/multi.txt
-        type: easylist
-
       - name: xndeye web-ad-rule
         path: https://raw.githubusercontent.com/xndeye/web-ad-rule/master/easylist.txt
         type: easylist
+
+      - name: xinggsf movie
+        path: https://raw.githubusercontent.com/xinggsf/Adblock-Plus-Rule/master/mv.txt
+
+      - name: xinggsf general
+        path: https://raw.githubusercontent.com/xinggsf/Adblock-Plus-Rule/master/rule.txt
+
+      - name: damengzhu jiekouAD
+        path: https://raw.githubusercontent.com/damengzhu/banad/main/jiekouAD.txt
+
+      - name: cjxlist annoyance
+        path: https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt
 
     #本地规则文件
     local:
