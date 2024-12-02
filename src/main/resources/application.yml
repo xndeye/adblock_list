@@ -71,8 +71,8 @@ application:
       - name: xinggsf movie
         path: https://raw.githubusercontent.com/xinggsf/Adblock-Plus-Rule/master/mv.txt
 
-      - name: xinggsf general
-        path: https://raw.githubusercontent.com/xinggsf/Adblock-Plus-Rule/master/rule.txt
+#      - name: xinggsf general
+#        path: https://raw.githubusercontent.com/xinggsf/Adblock-Plus-Rule/master/rule.txt
 
       - name: damengzhu jiekouAD
         path: https://raw.githubusercontent.com/damengzhu/banad/main/jiekouAD.txt
