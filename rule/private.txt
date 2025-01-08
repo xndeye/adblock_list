@@ -1,0 +1,29 @@
+[xndeye private adblock list]
+! Last Modified: 2024-07-31 00:00:00
+! Homepage: https://github.com/xndeye/adblock_list/v2
+! Description: 自用补充规则, 完全主观, 不定期更新.
+#-------------白名单---------------
+#个推
+@@||sdk.open.talk.gepush.com^
+#公共CDN
+@@||bootcdn.net^
+# 小米浏览器下载弹窗
+@@||hot.browser.miui.com^
+#----------------黑名单-----------------
+||log.uu.163.com^
+||ksmobile.com^
+||exp.sug.browser.miui.com^
+#斗鱼cdn日志
+||p2plog.douyucdn.cn^
+||p2perrorlog.douyucdn.cn^
+#微软遥测
+||browser.events.data.microsoft.com^
+||mobile.events.data.microsoft.com^$important
+||solitaireevents.microsoftcasualgames.com^$important
+||adsdkprod.azureedge.net^$important
+#小米跟踪器
+||tracker.xiaomixiaoai.com^$important
+#-----------------待定------------------
+#未知来源 广告/日志
+||toblog.ctobsnssdk.com^
+||xc.maoxiongtv.com^$important
