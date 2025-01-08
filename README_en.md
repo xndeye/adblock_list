@@ -1,133 +1,93 @@
-<div align="center">
-<h1>AD Filter Subscriber</h1>
-  <p>
-    Ad Filter Rule Subscriber, integrating rules from various sources to help you quickly build your own rule set~
-  </p>
-<!-- Badges -->
-<p>
-  <img src="https://img.shields.io/github/last-commit/fordes123/ad-filters-subscriber?style=flat-square" alt="last update" />
-  <img src="https://img.shields.io/github/forks/fordes123/ad-filters-subscriber?style=flat-square" alt="forks" />
-  <img src="https://img.shields.io/github/stars/fordes123/ad-filters-subscriber?style=flat-square" alt="stars" />
-  <img src="https://img.shields.io/github/issues/fordes123/ad-filters-subscriber?style=flat-square" alt="open issues" />
-  <img src="https://img.shields.io/github/license/fordes123/ad-filters-subscriber?style=flat-square" alt="license" />
-</p>
+# AdBlock List
 
-<h4>
-    <a href="#a">Introduction</a>
-  <span> · </span>
-    <a href="#b">Quick Start</a>
-  <span> · </span>
-    <a href="#c">Rule Subscription</a>
-  <span> · </span>
-    <a href="#d">Feedback</a>
-  </h4>
-</div>
-<br/>
+![Last Update](https://img.shields.io/github/last-commit/xndeye/adblock_list?style=flat-square&branch=release)
+![Build Status](https://img.shields.io/github/actions/workflow/status/xndeye/adblock_list/auto-update.yml?branch=main&style=flat-square)
+![Stars](https://img.shields.io/github/stars/xndeye/adblock_list?style=flat-square)
+![Forks](https://img.shields.io/github/forks/xndeye/adblock_list?style=flat-square)
 
-English | [中文](./README.md)
-<h2 id="a">📔 Introduction</h2>
+💪 Powerful yet restrained ad filtering rules that can block 99%[^1] of Web ads!
 
-This project aims to aggregate ad filtering rules from different sources and in various formats, allowing for flexible
-conversion and integration.
-> ⚠️ Note: The new version is not compatible with the original configuration format, so please be cautious before
-> migrating.
+> [!TIP]
+> This repository is built using [ad-filters-subscriber](https://github.com/fordes123/ad-filters-subscriber/), which regularly merges multiple high-quality upstream rules and removes duplicates and invalid items.  
+> Please report build and conversion errors [here](https://github.com/fordes123/ad-filters-subscriber/issues), and submit false positives and rule recommendations to this repository's [issues](https://github.com/xndeye/adblock_list/issues)
 
-#### Supported Rule Formats 
+| File | Description | github | ghproxy | jsdelivr |
+|------|:------------|:------:|:-------:|:--------:|
+| `easylist.txt` | Complete main rules | [link][easylist-raw] | [link][easylist-ghproxy] | [link][easylist-jsdelivr] |
+| `modify.txt` | `easylist.txt` without DNS filtering rules | [link][modify-raw] | [link][modify-ghproxy] | [link][modify-jsdelivr] |
+| `dns.txt` | DNS filtering rules only from `easylist.txt` | [link][dns-raw] | [link][dns-ghproxy] | [link][dns-jsdelivr] |
+| `dnsmasq.conf` | For dnsmasq and its derivatives | [link][dnsmasq-raw] | [link][dnsmasq-ghproxy] | [link][dnsmasq-jsdelivr] |
+| `clash.yaml` | For clash and its derivatives | [link][clash-raw] | [link][clash-ghproxy] | [link][clash-jsdelivr] |
+| `smartdns.conf` | For smartdns | [link][smartdns-raw] | [link][smartdns-ghproxy] | [link][smartdns-jsdelivr] |
+| `hosts` | Natively supported by almost all operating systems | [link][hosts-raw] | [link][hosts-ghproxy] | [link][hosts-jsdelivr] |
+| `private.txt` | Private rules maintained by this repository, provided in easylist format | [link][private-raw] | [link][private-ghproxy] | [link][private-jsdelivr] |
 
-- [x] easylist
-- [x] dnsmasq
-- [x] clash
-- [x] smartdns
-- [x] hosts
+[easylist-raw]: https://raw.githubusercontent.com/xndeye/adblock_list/refs/heads/release/easylist.txt
 
-#### Important Notes 
+[easylist-ghproxy]: https://ghproxy.net/https://raw.githubusercontent.com/xndeye/adblock_list/refs/heads/release/easylist.txt
 
-1. Only basic rule conversions are supported, specifically rules consisting of domain names and wildcard domains. Rules
-   such as `||example.org^$popup` cannot be converted (merging and deduplication are not affected). 
-2. Accept unavoidable limitations. For example, `||example.org^` will block example.org and all its subdomains, but when
-   converted to hosts format, it will not match subdomains. 
-3. Rule validity check is based on domain resolution, so it only supports basic rules.
+[easylist-jsdelivr]: https://gcore.jsdelivr.net/gh/xndeye/adblock_list@refs/heads/release/easylist.txt
 
-<h2 id="b">🛠️ Quick Start</h2>
+[modify-raw]: https://raw.githubusercontent.com/xndeye/adblock_list/refs/heads/release/modify.txt
 
-### Example Configuration
+[modify-ghproxy]: https://ghproxy.net/https://raw.githubusercontent.com/xndeye/adblock_list/refs/heads/release/modify.txt
 
-```yaml
-application:
-  rule:
-    # Remote rule subscription, path is http/https address
-    remote:
-      - name: 'Subscription 1'               # Optional parameter: Rule name, if no name is provided, the path will be used as the name.
-        path: 'https://example.org/rule.txt' # Required parameter: Rule url. Only support http/https. 
-        type: easylist                      # Optional parameter: Rule type: easylist (default)、dnsmasq、clash、smartdns、hosts
+[modify-jsdelivr]: https://gcore.jsdelivr.net/gh/xndeye/adblock_list@refs/heads/release/modify.txt
 
-    # Local rule, path is absolute or relative path
-    local:
-      - name: 'private rule'
-        path: '/rule/private.txt'
+[dns-raw]: https://raw.githubusercontent.com/xndeye/adblock_list/refs/heads/release/dns.txt
 
-  output:
-    # File header configuration, which will be automatically added as comments at the beginning of each rule file.
-    # You can use placeholders like ${name}, ${type}, ${desc}, and ${date} (current date).
-    file_header: |
-      ADFS Adblock List
-      Title: ${name}
-      Last Modified: ${date}
-      Homepage: https://github.com/fordes123/ad-filters-subscriber/
-    files:
-      - name: easylist.txt     # Required parameter: File name
-        type: EASYLIST         # Required parameter: File type: easylist、dnsmasq、clash、smartdns、hosts
-        desc: 'ADFS EasyList'  # Optional parameter: File description, which can be used within ${} in the file_header.
-        filter:                # Optional parameter: Types of included rules, all selected by default.
-          - basic              # Basic rules: Do not contain any control or matching symbols, can be converted to hosts.
-          - wildcard           # Wildcard rules: Only use wildcard symbols.
-          - unknown            # Other rules: Such as those using regex or advanced modifiers, cannot be converted at present.
-```
+[dns-ghproxy]: https://ghproxy.net/https://raw.githubusercontent.com/xndeye/adblock_list/refs/heads/release/dns.txt
 
----
-This program is written in `Java 21` and built using `Maven`. You can refer to the [example configuration](./config/application-example.yaml),
-edit `config/application.yaml`, and quickly get started using any of the following methods:
+[dns-jsdelivr]: https://gcore.jsdelivr.net/gh/xndeye/adblock_list@refs/heads/release/dns.txt
 
-#### **Local Debugging**
+[dnsmasq-raw]: https://raw.githubusercontent.com/xndeye/adblock_list/refs/heads/release/dnsmasq.conf
 
-```bash
-git clone https://github.com/fordes123/ad-filters-subscriber.git
-cd ad-filters-subscriber
-mvn clean
-mvn spring-boot:run
-```
+[dnsmasq-ghproxy]: https://ghproxy.net/https://raw.githubusercontent.com/xndeye/adblock_list/refs/heads/release/dnsmasq.conf
 
-#### **Github Action**
+[dnsmasq-jsdelivr]: https://gcore.jsdelivr.net/gh/xndeye/adblock_list@refs/heads/release/dnsmasq.conf
 
-- Fork this project
-- Customize rule subscriptions
-    - Refer to the [example configuration](./config/application-example.yaml) and modify the configuration file: `config/application.yaml`
-- Open the GitHub Actions page, select Update Filters on the left side, and authorize the workflow for scheduled
-  execution (⚠ important step)
-- Click Run workflow or wait for automatic execution. Once completed, the corresponding rules will be generated in the
-  directory specified in the configuration.
+[clash-raw]: https://raw.githubusercontent.com/xndeye/adblock_list/refs/heads/release/clash.yaml
 
-#### **Codespaces**
+[clash-ghproxy]: https://ghproxy.net/https://raw.githubusercontent.com/xndeye/adblock_list/refs/heads/release/clash.yaml
 
-- Log in to `GitHub`, click the `Code` button in the upper right corner of this repository, and select and create a
-  new `Codespace`.
-- Wait for `Codespaces` to start, and you can directly debug this project.
+[clash-jsdelivr]: https://gcore.jsdelivr.net/gh/xndeye/adblock_list@refs/heads/release/clash.yaml
 
-<h2 id="c">🎯 Rule Subscription</h2>
+[smartdns-raw]: https://raw.githubusercontent.com/xndeye/adblock_list/refs/heads/release/smartdns.conf
 
-> ⚠ This repository no longer provides rule subscriptions. We highly recommend forking this project to build your own
-> rule set.
+[smartdns-ghproxy]: https://ghproxy.net/https://raw.githubusercontent.com/xndeye/adblock_list/refs/heads/release/smartdns.conf
 
-Below are rule repositories built using this project. You can find suitable rule subscriptions in them:
+[smartdns-jsdelivr]: https://gcore.jsdelivr.net/gh/xndeye/adblock_list@refs/heads/release/smartdns.conf
+
+[hosts-raw]: https://raw.githubusercontent.com/xndeye/adblock_list/refs/heads/release/hosts
+
+[hosts-ghproxy]: https://ghproxy.net/https://raw.githubusercontent.com/xndeye/adblock_list/refs/heads/release/hosts
+
+[hosts-jsdelivr]: https://gcore.jsdelivr.net/gh/xndeye/adblock_list@refs/heads/release/hosts
+
+[private-raw]: https://raw.githubusercontent.com/xndeye/adblock_list/refs/heads/release/private.txt
+
+[private-ghproxy]: https://ghproxy.net/https://raw.githubusercontent.com/xndeye/adblock_list/refs/heads/release/private.txt
+
+[private-jsdelivr]: https://gcore.jsdelivr.net/gh/xndeye/adblock_list@refs/heads/release/private.txt
 
 <details>
-<summary>Click to view</summary>
+<summary>Click to view upstream rules</summary>
 <ul>
-<br/>
-<li><a href="https://github.com/xndeye/adblock_list/">xndeye/adblock_list</a></li>
+    <li><a href="https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_2_Base/filter.txt">AdGuard Base Filter</a></li>
+    <li><a href="https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_11_Mobile/filter.txt">AdGuard Mobile Ads Filter</a></li>
+    <li><a href="https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_3_Spyware/filter.txt">AdGuard Tracking Protection Filter</a></li>
+    <li><a href="https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_17_TrackParam/filter.txt">AdGuard URL Tracking Filter</a></li>
+    <li><a href="https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_14_Annoyances/filter.txt">AdGuard Annoyances Filter</a></li>
+    <li><a href="https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_10_Useful/filter.txt">AdGuard Search Ads and Self-Promotion Filter</a></li>
+    <li><a href="https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_224_Chinese/filter.txt">AdGuard Chinese Filter</a></li>
+    <li><a href="https://github.com/jdlingyu/ad-wars">ad-wars</a></li>
+    <li><a href="https://github.com/TG-Twilight/AWAvenue-Adblock-Rule">AWAvenue-Adblock-Rule</a></li>
+    <li><a href="https://raw.githubusercontent.com/Noyllopa/NoAppDownload/master/NoAppDownload.txt">NoAppDownload</a></li>
+    <li><a href="https://github.com/xndeye/web-ad-rule">xndeye/web-ad-rule</a></li>
+    <li><a href="https://github.com/xinggsf/Adblock-Plus-Rule">xinggsf/Adblock-Plus-Rule</a></li>
+    <li><a href="https://github.com/damengzhu/banad">damengzhu/banad</a></li>
+    <li><a href="https://github.com/cjx82630/cjxlist">cjx82630/cjxlist</a></li>
 </ul>
 </details>
 
-<h2 id="d">💬 Feedback</h2>
-
-- 👉 [issues](https://github.com/fordes123/ad-filters-subscriber/issues)
+[^1]: Data measured using [d3ward/toolz](https://d3ward.github.io/toolz/adblock.html) with `AdGuard Browser Extension` subscribing to this repository's `easylist.txt` rules on `Chrome 130.0`. [Results](https://github.com/user-attachments/assets/76ccfcac-9ffd-4bed-89d7-08cdfe6cc33d) are for reference only.
