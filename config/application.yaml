@@ -75,7 +75,7 @@ application:
 
   output:
     file_header: |
-      Title: xndeye adblock list - ${type}
+      Title: xndeye adblock list ${type}
       Last Modified: ${date}
       Homepage: https://github.com/xndeye/adblock_list
 
