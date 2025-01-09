@@ -81,13 +81,15 @@
     <li><a href="https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_14_Annoyances/filter.txt">AdGuard 恼人广告过滤器</a></li>
     <li><a href="https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_10_Useful/filter.txt">AdGuard 解除搜索广告和自我推销过滤器</a></li>
     <li><a href="https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_224_Chinese/filter.txt">AdGuard 中文过滤器</a></li>
-    <li><a href="https://github.com/jdlingyu/ad-wars">ad-wars</a></li>
     <li><a href="https://github.com/TG-Twilight/AWAvenue-Adblock-Rule">AWAvenue-Adblock-Rule</a></li>
     <li><a href="https://raw.githubusercontent.com/Noyllopa/NoAppDownload/master/NoAppDownload.txt">NoAppDownload</a></li>
     <li><a href="https://github.com/xndeye/web-ad-rule">xndeye/web-ad-rule</a></li>
     <li><a href="https://github.com/xinggsf/Adblock-Plus-Rule">xinggsf/Adblock-Plus-Rule</a></li>
     <li><a href="https://github.com/damengzhu/banad">damengzhu/banad</a></li>
     <li><a href="https://github.com/cjx82630/cjxlist">cjx82630/cjxlist</a></li>
+    <li><a href="https://easylist-downloads.adblockplus.org/antiadblockfilters.txt">ABP EasyList</a></li>
+    <li><a href="https://easylist-downloads.adblockplus.org/abp-filters-anti-cv.txt">ABP anti-circumvention filter list</a></li>
+    <li><a href="https://raw.githubusercontent.com/uBlockOrigin/uAssets/refs/heads/master/filters/privacy.txt">uBlockOrigin privacy</a></li>
 </ul>
 </details>
 

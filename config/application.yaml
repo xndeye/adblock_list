@@ -37,10 +37,6 @@ application:
         path: https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_224_Chinese/filter.txt
         type: easylist
 
-      - name: 大圣净化
-        path: https://raw.githubusercontent.com/jdlingyu/ad-wars/master/hosts
-        type: hosts
-
       - name: AWAvenue-Adblock-Rule
         path: https://raw.githubusercontent.com/TG-Twilight/AWAvenue-Ads-Rule/main/AWAvenue-Ads-Rule.txt
         type: easylist
@@ -62,6 +58,16 @@ application:
       - name: cjxlist annoyance
         path: https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt
 
+      - name: ABP filters
+        path: https://easylist-downloads.adblockplus.org/antiadblockfilters.txt
+
+      - name: ABP 反广告过滤
+        path: https://easylist-downloads.adblockplus.org/abp-filters-anti-cv.txt
+
+      - name: uBlockOrigin privacy
+        path: https://raw.githubusercontent.com/uBlockOrigin/uAssets/refs/heads/master/filters/privacy.txt
+
+
     local:
       - name: 'xndeye private adblock list'
         path: 'rule/private.txt'
@@ -69,9 +75,9 @@ application:
 
   output:
     file_header: |
-      xndeye adblock list for ${type}
+      Title: xndeye adblock list - ${type}
       Last Modified: ${date}
-      Homepage: https://github.com/xndeye/adblock_list/tree/beta
+      Homepage: https://github.com/xndeye/adblock_list
 
     files:
       - name: easylist.txt
