@@ -67,6 +67,9 @@ application:
       - name: uBlockOrigin privacy
         path: https://raw.githubusercontent.com/uBlockOrigin/uAssets/refs/heads/master/filters/privacy.txt
 
+      - name: Telemetry Lists - Aggregated
+        path: https://raw.githubusercontent.com/SystemJargon/filters/refs/heads/main/telemetry.txt
+
 
     local:
       - name: 'xndeye private adblock list'

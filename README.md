@@ -90,6 +90,7 @@
     <li><a href="https://easylist-downloads.adblockplus.org/antiadblockfilters.txt">ABP EasyList</a></li>
     <li><a href="https://easylist-downloads.adblockplus.org/abp-filters-anti-cv.txt">ABP anti-circumvention filter list</a></li>
     <li><a href="https://raw.githubusercontent.com/uBlockOrigin/uAssets/refs/heads/master/filters/privacy.txt">uBlockOrigin privacy</a></li>
+    <li><a href="https://raw.githubusercontent.com/SystemJargon/filters/refs/heads/main/telemetry.txt">Telemetry Lists - Aggregated</a></li>
 </ul>
 </details>
 
