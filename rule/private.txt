@@ -6,6 +6,8 @@
 #-------------白名单---------------
 # 屏蔽此域会导致小米天气网络异常
 @@||metok.sys.miui.com^$important
+# 屏蔽此域会导致Edge浏览器翻译不可用
+@@||edge.microsoft.com^$important
 #----------------黑名单-----------------
 ||log.uu.163.com^
 ||ksmobile.com^
