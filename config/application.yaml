@@ -7,6 +7,12 @@ application:
       enable: true
       timeout: 10
 
+    exclude:
+      # 屏蔽此域会导致Edge浏览器翻译不可用
+      - "edge.microsoft.com"
+      # 屏蔽此域会导致小米天气网络异常
+      - "metok.sys.miui.com"
+
   rule:
     remote:
       - name: AdGuard 基础过滤器
@@ -78,7 +84,7 @@ application:
 
   output:
     file_header: |
-      Title: xndeye adblock list ${type}
+      Title: xndeye adblock list of ${type}
       Last Modified: ${date}
       Homepage: https://github.com/xndeye/adblock_list
 
@@ -92,6 +98,10 @@ application:
 
       - name: dns.txt
         type: easylist
+        file_header: |
+          Title: xndeye adblock list of dns 
+          Last Modified: ${date}
+          Homepage: https://github.com/xndeye/adblock_list
         filter:
           - basic
           - wildcard

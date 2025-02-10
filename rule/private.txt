@@ -1,13 +1,8 @@
 ! Title: xndeye adblock list smartdns
-! Last Modified: 2025-01-17 00:00:00
+! Last Modified: 2025-02-10 00:00:00
 ! Homepage: https://github.com/xndeye/adblock_list/
 ! Description: 自用补充规则, 完全主观, 不定期更新.
 
-#-------------白名单---------------
-# 屏蔽此域会导致小米天气网络异常
-@@||metok.sys.miui.com^$important
-# 屏蔽此域会导致Edge浏览器翻译不可用
-@@||edge.microsoft.com^$important
 #----------------黑名单-----------------
 ||log.uu.163.com^
 ||ksmobile.com^
