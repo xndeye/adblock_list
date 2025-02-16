@@ -1,0 +1,22 @@
+! Title: xndeye adblock list smartdns
+! Last Modified: 2025-02-10 00:00:00
+! Homepage: https://github.com/xndeye/adblock_list/
+! Description: 自用补充规则, 完全主观, 不定期更新.
+
+#----------------黑名单-----------------
+||log.uu.163.com^
+||ksmobile.com^
+||exp.sug.browser.miui.com^
+#斗鱼cdn日志
+||p2plog.douyucdn.cn^
+||p2perrorlog.douyucdn.cn^
+#微软遥测/广告
+||events.data.microsoft.com^$important
+||solitaireevents.microsoftcasualgames.com^$important
+||adsdkprod.azureedge.net^$important
+#小米跟踪器
+||tracker.xiaomixiaoai.com^$important
+#-----------------待定------------------
+#未知来源 广告/日志
+||toblog.ctobsnssdk.com^
+||xc.maoxiongtv.com^$important
