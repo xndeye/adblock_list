@@ -12,6 +12,8 @@ application:
       - "edge.microsoft.com"
       # 屏蔽此域会导致小米天气网络异常
       - "metok.sys.miui.com"
+      # 屏蔽此域会导致10086 App登陆异常
+      - "client.app.coc.10086.cn"
 
   rule:
     remote:
