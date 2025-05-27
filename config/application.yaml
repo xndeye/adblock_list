@@ -4,8 +4,12 @@
 application:
   config:
     domain-detect:
-      enable: false
-      timeout: 10
+      enable: true
+      timeout: 3000
+      concurrency: 128
+      provider:
+        - 1.1.1.1
+        - 8.8.8.8
 
     exclude:
       # 屏蔽此域会导致Edge浏览器翻译不可用
