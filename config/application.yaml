@@ -24,15 +24,15 @@ application:
   rule:
     remote:
       - name: AdGuard 基础过滤器
-        path: https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_2_Base/filter.txt
+        path: https://filters.adtidy.org/extension/ublock/filters/2_optimized.txt
         type: easylist
 
       - name: AdGuard 移动广告过滤器
-        path: https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_11_Mobile/filter.txt
+        path: https://filters.adtidy.org/extension/ublock/filters/11_optimized.txt
         type: easylist
 
       - name: AdGuard 防跟踪保护过滤器
-        path: https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_3_Spyware/filter.txt
+        path: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
         type: easylist
 
       - name: AdGuard URL跟踪过滤器
@@ -48,7 +48,7 @@ application:
         type: easylist
 
       - name: AdGuard 中文过滤器
-        path: https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_224_Chinese/filter.txt
+        path: https://filters.adtidy.org/extension/ublock/filters/224_optimized.txt
         type: easylist
 
       - name: AWAvenue-Adblock-Rule
@@ -83,6 +83,15 @@ application:
 
       - name: Telemetry Lists - Aggregated
         path: https://raw.githubusercontent.com/SystemJargon/filters/refs/heads/main/telemetry.txt
+
+      - name: GoodbyeAds-Xiaomi
+        path: https://cdn.jsdelivr.net/gh/jerryn70/GoodbyeAds@master/Extension/GoodbyeAds-Xiaomi-Extension.txt
+
+      - name: GoodbyeAds-Huawei
+        path: https://cdn.jsdelivr.net/gh/jerryn70/GoodbyeAds@master/Extension/GoodbyeAds-Huawei-AdBlock.txt
+
+      - name: GoodbyeAds-Samsung
+        path: https://cdn.jsdelivr.net/gh/jerryn70/GoodbyeAds@master/Extension/GoodbyeAds-Samsung-AdBlock.txt
 
 
     local:
