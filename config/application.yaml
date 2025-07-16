@@ -20,6 +20,8 @@ application:
       - "client.app.coc.10086.cn"
       # 屏蔽此域会导致MSN页面无法正常加载
       - "assets.msn.com"
+      - "c.msn.cn"
+      - "c.msn.com"
 
   rule:
     remote:
