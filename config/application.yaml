@@ -4,9 +4,6 @@
 application:
 
   input:
-    #      - name: AdGuard 基础过滤器
-    #        path: https://filters.adtidy.org/extension/ublock/filters/2_optimized.txt
-    #        type: easylist
 
     - name: AdGuard 移动广告过滤器
       path: https://filters.adtidy.org/extension/ublock/filters/11_optimized.txt
@@ -47,9 +44,6 @@ application:
     - name: xinggsf movie
       path: https://raw.githubusercontent.com/xinggsf/Adblock-Plus-Rule/master/mv.txt
 
-    #      - name: damengzhu jiekouAD
-    #        path: https://raw.githubusercontent.com/damengzhu/banad/main/jiekouAD.txt
-
     - name: cjxlist annoyance
       path: https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt
 
@@ -80,7 +74,6 @@ application:
 
   output:
     file_header: |
-      [Adblock Plus 2.0]
       Title: xndeye adblock list of ${type}
       Total Size: ${total}
       Last Modified: ${date}
@@ -97,7 +90,6 @@ application:
       - name: dns.txt
         type: easylist
         file_header: |
-          [Adblock Plus 2.0]
           Title: xndeye adblock list of dns
           Total Size: ${total}
           Last Modified: ${date}
@@ -141,7 +133,3 @@ application:
       - "metok.sys.miui.com"
       - "assets.msn.com"
       - "firebaseinstallations.googleapis.com"
-
-    tracking:
-      enable: true
-      path: logs/lost.list
