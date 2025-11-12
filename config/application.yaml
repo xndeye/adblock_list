@@ -59,14 +59,14 @@ application:
     - name: Telemetry Lists - Aggregated
       path: https://raw.githubusercontent.com/SystemJargon/filters/refs/heads/main/telemetry.txt
 
-    - name: GoodbyeAds-Xiaomi
-      path: https://cdn.jsdelivr.net/gh/jerryn70/GoodbyeAds@master/Extension/GoodbyeAds-Xiaomi-Extension.txt
-
-    - name: GoodbyeAds-Huawei
-      path: https://cdn.jsdelivr.net/gh/jerryn70/GoodbyeAds@master/Extension/GoodbyeAds-Huawei-AdBlock.txt
-
-    - name: GoodbyeAds-Samsung
-      path: https://cdn.jsdelivr.net/gh/jerryn70/GoodbyeAds@master/Extension/GoodbyeAds-Samsung-AdBlock.txt
+#    - name: GoodbyeAds-Xiaomi
+#      path: https://cdn.jsdelivr.net/gh/jerryn70/GoodbyeAds@master/Extension/GoodbyeAds-Xiaomi-Extension.txt
+#
+#    - name: GoodbyeAds-Huawei
+#      path: https://cdn.jsdelivr.net/gh/jerryn70/GoodbyeAds@master/Extension/GoodbyeAds-Huawei-AdBlock.txt
+#
+#    - name: GoodbyeAds-Samsung
+#      path: https://cdn.jsdelivr.net/gh/jerryn70/GoodbyeAds@master/Extension/GoodbyeAds-Samsung-AdBlock.txt
 
     - name: 'xndeye private adblock list'
       path: 'rule/private.txt'
@@ -132,4 +132,4 @@ application:
       - "edge.microsoft.com"
       - "metok.sys.miui.com"
       - "assets.msn.com"
-      - "firebaseinstallations.googleapis.com"
+#      - "firebaseinstallations.googleapis.com"
