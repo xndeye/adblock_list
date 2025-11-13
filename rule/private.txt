@@ -1,5 +1,5 @@
 ! Title: xndeye adblock list of private
-! Last Modified: 2025-11-05 00:00:00
+! Last Modified: 2025-11-13 00:00:00
 ! Homepage: https://github.com/xndeye/adblock_list/
 ! Description: 对本仓库上游规则的补充与修正, 不定期更新.
 
@@ -22,6 +22,7 @@
 ||sentry.d.xiaomi.net^
 ||httpdns.browser.miui.com^
 ||track.ad.xiaomi.com^$important
+||adx.v.mitvos.com^$important
 
 #萤石日志
 ||log.ys7.com^
@@ -36,7 +37,31 @@
 ||v6-adashx.ut.ele.me^$important
 ||adashx.ut.ele.me^$important
 
+# 美团
+||analytics.meituan.net^$important
+
+# 什么值得买
+||analytics-api-01.smzdm.com^$important
+
+# emqx
+||analytics.emqx.com^$important
+
+# mihoyo
+||ys-log-upload.mihoyo.com^$important
+||log-upload-v6.mihoyo.com^$important
+||sdk-log-upload.mihoyo.com^$important
+||h5log-api-dualstack.mihoyo.com^$important
+
+# 网易
+||clientlog.music.163.com^$important
+
+# 沉浸式翻译插件
+||analytics.immersivetranslate.com^$important
+
 #-----------------待定------------------
 #未知来源 广告/日志
 ||toblog.ctobsnssdk.com^
 ||xc.maoxiongtv.com^$important
+||analytics.95516.com^$important
+||analytics.qnloft.com^$important
+||adjust.io^$important
