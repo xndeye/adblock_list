@@ -58,6 +58,18 @@
 # 沉浸式翻译插件
 ||analytics.immersivetranslate.com^$important
 
+# 叮咚买菜
+||trackersocket.ddxq.mobi^$important
+||trackerfeed.ddxq.mobi^$important
+||monitorcollect.ddxq.mobi^$important
+||trackercollect.ddxq.mobi^$important
+
+# filemail
+||tracker.filemail.com^$important
+
+# wps
+||collect.wpsmail.net^$important
+
 #-----------------待定------------------
 #未知来源 广告/日志
 ||toblog.ctobsnssdk.com^
@@ -65,3 +77,4 @@
 ||analytics.95516.com^$important
 ||analytics.qnloft.com^$important
 ||adjust.io^$important
+||logcollect.e-sscard.com^$important
