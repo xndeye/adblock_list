@@ -82,21 +82,9 @@ application:
     files:
       - name: easylist.txt
         type: easylist
-        filter:
-          - basic
-          - wildcard
-          - unknown
 
       - name: dns.txt
-        type: easylist
-        file_header: |
-          Title: xndeye adblock list of dns
-          Total Size: ${total}
-          Last Modified: ${date}
-          Homepage: https://github.com/xndeye/adblock_list
-        filter:
-          - basic
-          - wildcard
+        type: dns
 
       - name: modify.txt
         type: easylist
@@ -117,19 +105,22 @@ application:
 
   config:
 
-    expected_quantity: 2000000
-    fault_tolerance: 0.0001
+    parser:
+      log-level: debug
+      alert-length: 6
+      expected: 200000
 
-    domain-detect:
-      enable: true
-      timeout: 3000
-      concurrency: 128
-      provider:
-        - 1.1.1.1
-        - 8.8.8.8
+      dns-probe:
+        enable: true
+        parallel: 128
+        provider:
+          - host: 1.1.1.1
+            port: 53
 
-    exclude:
+          - host: 8.8.8.8
+            port: 53
+
+    excludes:
       - "edge.microsoft.com"
       - "metok.sys.miui.com"
       - "assets.msn.com"
-#      - "firebaseinstallations.googleapis.com"
