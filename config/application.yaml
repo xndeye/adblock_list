@@ -120,7 +120,7 @@ application:
           - host: 8.8.8.8
             port: 53
 
-    excludes:
-      - "edge.microsoft.com"
-      - "metok.sys.miui.com"
-      - "assets.msn.com"
+      excludes:
+        - "edge.microsoft.com"
+#        - "metok.sys.miui.com"
+        - "assets.msn.com"
