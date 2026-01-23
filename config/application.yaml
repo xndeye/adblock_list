@@ -43,30 +43,31 @@ application:
 
     - name: xinggsf movie
       path: https://raw.githubusercontent.com/xinggsf/Adblock-Plus-Rule/master/mv.txt
+      type: easylist
 
     - name: cjxlist annoyance
       path: https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt
+      type: easylist
 
     - name: EasyList China+EasyList
       path: https://easylist-downloads.adblockplus.org/easylistchina+easylist.txt
+      type: easylist
 
     - name: ABP filters
       path: https://easylist-downloads.adblockplus.org/abp-filters-anti-cv.txt
+      type: easylist
 
     - name: uBlockOrigin privacy
       path: https://raw.githubusercontent.com/uBlockOrigin/uAssets/refs/heads/master/filters/privacy.txt
+      type: easylist
 
     - name: Telemetry Lists - Aggregated
       path: https://raw.githubusercontent.com/SystemJargon/filters/refs/heads/main/telemetry.txt
+      type: dns
 
-#    - name: GoodbyeAds-Xiaomi
-#      path: https://cdn.jsdelivr.net/gh/jerryn70/GoodbyeAds@master/Extension/GoodbyeAds-Xiaomi-Extension.txt
-#
-#    - name: GoodbyeAds-Huawei
-#      path: https://cdn.jsdelivr.net/gh/jerryn70/GoodbyeAds@master/Extension/GoodbyeAds-Huawei-AdBlock.txt
-#
-#    - name: GoodbyeAds-Samsung
-#      path: https://cdn.jsdelivr.net/gh/jerryn70/GoodbyeAds@master/Extension/GoodbyeAds-Samsung-AdBlock.txt
+    - name: '1Hosts Lite'
+      path: 'https://raw.githubusercontent.com/badmojr/1Hosts/master/Lite/adblock.txt'
+      type: dns
 
     - name: 'xndeye private adblock list'
       path: 'rule/private.txt'

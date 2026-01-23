@@ -91,6 +91,7 @@
     <li><a href="https://easylist-downloads.adblockplus.org/abp-filters-anti-cv.txt">ABP filters</a></li>
     <li><a href="https://raw.githubusercontent.com/uBlockOrigin/uAssets/refs/heads/master/filters/privacy.txt">uBlockOrigin privacy</a></li>
     <li><a href="https://github.com/SystemJargon/filters">Telemetry Lists</a></li>
+    <li><a href="https://github.com/badmojr/1Hosts">1Hosts Lite</a></li>
 </ul>
 </details>
 
