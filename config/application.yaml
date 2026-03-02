@@ -123,5 +123,5 @@ application:
 
       excludes:
         - "edge.microsoft.com"
-#        - "metok.sys.miui.com"
+        - "public.gensparkspace.com"
         - "assets.msn.com"
