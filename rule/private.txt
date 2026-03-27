@@ -1,5 +1,5 @@
 ! Title: xndeye adblock list of private
-! Last Modified: 2026-01-12 00:00:00
+! Last Modified: 2026-03-27 00:00:00
 ! Homepage: https://github.com/xndeye/adblock_list/
 ! Description: 对本仓库上游规则的补充与修正, 不定期更新.
 
@@ -75,10 +75,18 @@
 
 # 小米
 ||logsdata.cxkfwn.com^$important
+||pre-api.miui.security.xiaomi.com^$important
 
 # bilibili
 /.*-tracker.biliapi.net/
 /.*-tracker-.*.bilibili.com/
+
+# apifox
+||apifox.cn-hangzhou.log.aliyuncs.com^$important
+||apifox.it.com^$important
+
+# tencent
+/tracker-.*.qvb.qcloud.com/
 
 #-----------------待定------------------
 #未知来源 广告/日志
@@ -89,3 +97,5 @@
 ||adjust.io^$important
 ||logcollect.e-sscard.com^$important
 ||ksmobile.com^
+||adblock.telemetry.eyeo.com^$important
+||adblock.telemetry.getadblock.com^$important
