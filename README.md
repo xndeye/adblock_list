@@ -12,16 +12,18 @@
 > 本仓库通过 [ad-filters-subscriber](https://github.com/fordes123/ad-filters-subscriber/) 构建，定时合并多个优质上游规则，并去除重复和失效项。  
 > 构建和转换错误请反馈至 [此处](https://github.com/fordes123/ad-filters-subscriber/issues)，误杀和规则推荐请提交至本仓库 [issues](https://github.com/xndeye/adblock_list/issues)
 
-| 文件              | 说明                          |        github        |         ghproxy          |         jsdelivr          |
-|-----------------|:----------------------------|:--------------------:|:------------------------:|:-------------------------:|
-| `easylist.txt`  | 完整主规则                       | [link][easylist-raw] | [link][easylist-ghproxy] | [link][easylist-jsdelivr] |
-| `modify.txt`    | 不含 DNS 过滤规则的 `easylist.txt` |  [link][modify-raw]  |  [link][modify-ghproxy]  |  [link][modify-jsdelivr]  |
-| `dns.txt`       | 仅含 DNS 过滤规则的 `easylist.txt` |   [link][dns-raw]    |   [link][dns-ghproxy]    |   [link][dns-jsdelivr]    |
-| `dnsmasq.conf`  | dnsmasq 及其衍生版本              | [link][dnsmasq-raw]  | [link][dnsmasq-ghproxy]  | [link][dnsmasq-jsdelivr]  |
-| `clash.yaml`    | clash 及其衍生版本                |  [link][clash-raw]   |  [link][clash-ghproxy]   |  [link][clash-jsdelivr]   |
-| `smartdns.conf` | smartdns                    | [link][smartdns-raw] | [link][smartdns-ghproxy] | [link][smartdns-jsdelivr] |
-| `hosts`         | 几乎所有操作系统原生支持                |  [link][hosts-raw]   |  [link][hosts-ghproxy]   |  [link][hosts-jsdelivr]   |
-| `private.txt`   | 本仓库维护的私有规则，以 easylist 形式提供  | [link][private-raw]  | [link][private-ghproxy]  | [link][private-jsdelivr]  |
+| 文件            | 说明                                    | github               | ghproxy                  | jsdelivr                  |
+|-----------------|:----------------------------------------|:--------------------:|:------------------------:|:-------------------------:|
+| `easylist.txt`   | AdGuard 广告过滤规则                     | [link][easylist-raw]  | [link][easylist-ghproxy]  | [link][easylist-jsdelivr]  |
+| `ubo.txt`        | uBlock Origin 广告过滤规则               | [link][ubo-raw]       | [link][ubo-ghproxy]       | [link][ubo-jsdelivr]       |
+| `abp.txt`        | Adblock Plus 广告过滤规则                | [link][abp-raw]       | [link][abp-ghproxy]       | [link][abp-jsdelivr]       |
+| `dns.txt`        | AdGuard DNS 过滤规则                     | [link][dns-raw]       | [link][dns-ghproxy]       | [link][dns-jsdelivr]       |
+| `hosts.txt`      | Hosts 格式规则                          | [link][hosts-raw]     | [link][hosts-ghproxy]     | [link][hosts-jsdelivr]     |
+| `dnsmasq.txt`    | dnsmasq 格式规则                         | [link][dnsmasq-raw]   | [link][dnsmasq-ghproxy]   | [link][dnsmasq-jsdelivr]   |
+| `smartdns.txt`   | SmartDNS 格式规则                        | [link][smartdns-raw]  | [link][smartdns-ghproxy]  | [link][smartdns-jsdelivr]  |
+| `clash.yaml`     | Mihomo 域名规则集（YAML）                 | [link][clash-raw]     | [link][clash-ghproxy]     | [link][clash-jsdelivr]     |
+| `sing-box.json`  | sing-box 规则集（JSON）                  | [link][sing-box-raw]  | [link][sing-box-ghproxy]  | [link][sing-box-jsdelivr]  |
+| `private.txt`    | 本仓库维护的私有规则，以 easylist 形式提供 | [link][private-raw]   | [link][private-ghproxy]   | [link][private-jsdelivr]   |
 
 [easylist-raw]: https://raw.githubusercontent.com/xndeye/adblock_list/refs/heads/release/easylist.txt
 
@@ -29,11 +31,17 @@
 
 [easylist-jsdelivr]: https://gcore.jsdelivr.net/gh/xndeye/adblock_list@refs/heads/release/easylist.txt
 
-[modify-raw]: https://raw.githubusercontent.com/xndeye/adblock_list/refs/heads/release/modify.txt
+[ubo-raw]: https://raw.githubusercontent.com/xndeye/adblock_list/refs/heads/release/ubo.txt
 
-[modify-ghproxy]: https://ghproxy.net/https://raw.githubusercontent.com/xndeye/adblock_list/refs/heads/release/modify.txt
+[ubo-ghproxy]: https://ghproxy.net/https://raw.githubusercontent.com/xndeye/adblock_list/refs/heads/release/ubo.txt
 
-[modify-jsdelivr]: https://gcore.jsdelivr.net/gh/xndeye/adblock_list@refs/heads/release/modify.txt
+[ubo-jsdelivr]: https://gcore.jsdelivr.net/gh/xndeye/adblock_list@refs/heads/release/ubo.txt
+
+[abp-raw]: https://raw.githubusercontent.com/xndeye/adblock_list/refs/heads/release/abp.txt
+
+[abp-ghproxy]: https://ghproxy.net/https://raw.githubusercontent.com/xndeye/adblock_list/refs/heads/release/abp.txt
+
+[abp-jsdelivr]: https://gcore.jsdelivr.net/gh/xndeye/adblock_list@refs/heads/release/abp.txt
 
 [dns-raw]: https://raw.githubusercontent.com/xndeye/adblock_list/refs/heads/release/dns.txt
 
@@ -41,11 +49,23 @@
 
 [dns-jsdelivr]: https://gcore.jsdelivr.net/gh/xndeye/adblock_list@refs/heads/release/dns.txt
 
-[dnsmasq-raw]: https://raw.githubusercontent.com/xndeye/adblock_list/refs/heads/release/dnsmasq.conf
+[hosts-raw]: https://raw.githubusercontent.com/xndeye/adblock_list/refs/heads/release/hosts.txt
 
-[dnsmasq-ghproxy]: https://ghproxy.net/https://raw.githubusercontent.com/xndeye/adblock_list/refs/heads/release/dnsmasq.conf
+[hosts-ghproxy]: https://ghproxy.net/https://raw.githubusercontent.com/xndeye/adblock_list/refs/heads/release/hosts.txt
 
-[dnsmasq-jsdelivr]: https://gcore.jsdelivr.net/gh/xndeye/adblock_list@refs/heads/release/dnsmasq.conf
+[hosts-jsdelivr]: https://gcore.jsdelivr.net/gh/xndeye/adblock_list@refs/heads/release/hosts.txt
+
+[dnsmasq-raw]: https://raw.githubusercontent.com/xndeye/adblock_list/refs/heads/release/dnsmasq.txt
+
+[dnsmasq-ghproxy]: https://ghproxy.net/https://raw.githubusercontent.com/xndeye/adblock_list/refs/heads/release/dnsmasq.txt
+
+[dnsmasq-jsdelivr]: https://gcore.jsdelivr.net/gh/xndeye/adblock_list@refs/heads/release/dnsmasq.txt
+
+[smartdns-raw]: https://raw.githubusercontent.com/xndeye/adblock_list/refs/heads/release/smartdns.txt
+
+[smartdns-ghproxy]: https://ghproxy.net/https://raw.githubusercontent.com/xndeye/adblock_list/refs/heads/release/smartdns.txt
+
+[smartdns-jsdelivr]: https://gcore.jsdelivr.net/gh/xndeye/adblock_list@refs/heads/release/smartdns.txt
 
 [clash-raw]: https://raw.githubusercontent.com/xndeye/adblock_list/refs/heads/release/clash.yaml
 
@@ -53,17 +73,11 @@
 
 [clash-jsdelivr]: https://gcore.jsdelivr.net/gh/xndeye/adblock_list@refs/heads/release/clash.yaml
 
-[smartdns-raw]: https://raw.githubusercontent.com/xndeye/adblock_list/refs/heads/release/smartdns.conf
+[sing-box-raw]: https://raw.githubusercontent.com/xndeye/adblock_list/refs/heads/release/sing-box.json
 
-[smartdns-ghproxy]: https://ghproxy.net/https://raw.githubusercontent.com/xndeye/adblock_list/refs/heads/release/smartdns.conf
+[sing-box-ghproxy]: https://ghproxy.net/https://raw.githubusercontent.com/xndeye/adblock_list/refs/heads/release/sing-box.json
 
-[smartdns-jsdelivr]: https://gcore.jsdelivr.net/gh/xndeye/adblock_list@refs/heads/release/smartdns.conf
-
-[hosts-raw]: https://raw.githubusercontent.com/xndeye/adblock_list/refs/heads/release/hosts
-
-[hosts-ghproxy]: https://ghproxy.net/https://raw.githubusercontent.com/xndeye/adblock_list/refs/heads/release/hosts
-
-[hosts-jsdelivr]: https://gcore.jsdelivr.net/gh/xndeye/adblock_list@refs/heads/release/hosts
+[sing-box-jsdelivr]: https://gcore.jsdelivr.net/gh/xndeye/adblock_list@refs/heads/release/sing-box.json
 
 [private-raw]: https://raw.githubusercontent.com/xndeye/adblock_list/refs/heads/release/private.txt
 

@@ -99,3 +99,4 @@
 ||ksmobile.com^
 ||adblock.telemetry.eyeo.com^$important
 ||adblock.telemetry.getadblock.com^$important
+||telemetry.desktop.kiro.dev^$important
