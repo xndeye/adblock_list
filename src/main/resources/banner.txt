@@ -1,9 +1,0 @@
-
-@|bold,green    █████╗  ██████╗  ███████╗ ███████╗|@
-@|bold,green   ██╔══██╗ ██╔══██╗ ██╔════╝ ██╔════╝|@
-@|bold,green   ███████║ ██║  ██║ █████╗   ███████╗|@
-@|bold,green   ██╔══██║ ██║  ██║ ██╔══╝   ╚════██║|@
-@|bold,green   ██║  ██║ ██████╔╝ ██║      ███████║|@
-@|bold,green   ╚═╝  ╚═╝ ╚═════╝  ╚═╝      ╚══════╝|@
-@|bold,yellow   ⚡|@ @|bold,white AD Filter Subscriber • v%1$s|@
-@|bold,white  |@ @|faint https://github.com/fordes123/ad-filters-subscriber/issues|@
