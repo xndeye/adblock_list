@@ -143,6 +143,8 @@ adfs:
         - "edge.microsoft.com"
         - "public.gensparkspace.com"
         - "assets.msn.com"
+        # 华为应用商店相关域名
+        - "store-drcn.hispace.dbankcloud.com"
 
     conversion:
       allow-expansion: false
