@@ -97,7 +97,7 @@
     <li><a href="https://filters.adtidy.org/extension/ublock/filters/224_optimized.txt">AdGuard 中文过滤器</a></li>
     <li><a href="https://github.com/TG-Twilight/AWAvenue-Adblock-Rule">AWAvenue-Adblock-Rule</a></li>
     <li><a href="https://raw.githubusercontent.com/Noyllopa/NoAppDownload/master/NoAppDownload.txt">NoAppDownload</a></li>
-    <li><a href="https://github.com/xndeye/web-ad-rule">xndeye/web-ad-rule</a></li>
+    <li><a href="https://github.com/xndeye/web-ad-rule"><del>xndeye/web-ad-rule</del></a></li>
     <li><a href="https://github.com/xinggsf/Adblock-Plus-Rule">xinggsf/Adblock-Plus-Rule</a></li>
     <li><a href="https://github.com/damengzhu/banad"><del>damengzhu/banad</del></a></li>
     <li><a href="https://github.com/cjx82630/cjxlist">cjx82630/cjxlist</a></li>

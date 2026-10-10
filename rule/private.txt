@@ -36,6 +36,7 @@
 ||adashx.ut.dingtalk.com^$important
 ||v6-adashx.ut.ele.me^$important
 ||adashx.ut.ele.me^$important
+||log.aliyuncs.com^$important
 
 # 美团
 ||analytics.meituan.net^$important
@@ -88,6 +89,76 @@
 # tencent
 /tracker-.*.qvb.qcloud.com/
 
+# appinn
+www.appinn.com##.featured-section
+www.appinn.com###sidebar.wp-block-image
+www.appinn.com##.size-full
+www.appinn.com##.secondary-navigation .container > *:not(nav)
+www.appinn.com##.latestPost:has(a[title="View all posts in 团购"])
+www.appinn.com##.latestPost:has(a[title="View all posts in AD"])
+
+# fuliba
+fuliba.net,fuliba2023.net,fuliba2024.net,fuliba2025.net##.sidebar
+fuliba.net,fuliba2023.net,fuliba2024.net,fuliba2025.net##.site-navbar>li:is(:nth-child(3),:nth-child(4),:nth-child(5))
+fuliba.net,fuliba2023.net,fuliba2024.net,fuliba2025.net##.karbar ul>li:not(:nth-child(2))
+fuliba.net,fuliba2023.net,fuliba2024.net,fuliba2025.net##.swiper-container
+fuliba.net,fuliba2023.net,fuliba2024.net,fuliba2025.net##.more
+fuliba.net,fuliba2023.net,fuliba2024.net,fuliba2025.net##iframe
+fuliba.net,fuliba2023.net,fuliba2024.net,fuliba2025.net##.content > a
+fuliba.net,fuliba2023.net,fuliba2024.net,fuliba2025.net#$#.content { margin-right: 0 !important; }
+fuliba.net,fuliba2023.net,fuliba2024.net,fuliba2025.net#$#span[style] { color: green !important; }
+fuliba.net,fuliba2023.net,fuliba2024.net,fuliba2025.net##.excerpt:has(.cat:contains(购物网赚))
+
+# springdoc cn
+springdoc.cn/ad/
+
+# susuifa.com
+susuifa.com##.slider-row-1
+susuifa.com##.single-top-html
+susuifa.com##.post-note
+susuifa.com##.single-bottom-html
+
+#doc.hutool.cn
+doc.hutool.cn##.hutool-top-zz
+doc.hutool.cn##.custom-html-window
+doc.hutool.cn##.custom-html-window-lb
+doc.hutool.cn#$#.sidebar>.sidebar-links {margin-top: -8rem !important;}
+doc.hutool.cn##.wwads-cn
+
+#xiaolincoding.com
+||*readmore.js$domain=xiaolincoding.com
+xiaolincoding.com#?#p[align='center']
+xiaolincoding.com#?##readmore-container>:nth-last-child(-n+2)
+xiaolincoding.com#?#.page-side-toolbar .option-box:not(:nth-child(-n+3)):not(:nth-last-child(-n+2))
+
+#north-plus
+north-plus.net,spring-plus.net,white-plus.net###header>div:last-child
+
+#iconfont
+iconfont.cn##.top-tip
+
+#ddys
+ddys.pro##.entry:first-child,.cfa_popup,.site-main>div:first-child
+
+#cnblogs
+cnblogs.com##.charm-bar
+
+#cycani
+cycani.org,ciyuancheng.net##.ec-tutu, .ec-tutu-double
+
+#digvps.com
+digvps.com##div[data-slot~="bottom"]>div
+digvps.com##div:has(> a[rel~="sponsored"])
+
+#mvnrepository.com
+mvnrepository.com##.box:has(> a)
+
+#ping0
+ping0.cc##.myeles
+
+#SUBMAIL（赛邮云通信）
+||subtracker.mysubmail.com^$important
+
 #-----------------待定------------------
 #未知来源 广告/日志
 ||toblog.ctobsnssdk.com^
@@ -100,3 +171,7 @@
 ||adblock.telemetry.eyeo.com^$important
 ||adblock.telemetry.getadblock.com^$important
 ||telemetry.desktop.kiro.dev^$important
+
+
+
+||app.privatracker.com^$important
