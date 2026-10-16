@@ -9,8 +9,12 @@
 💪 强大而克制的广告过滤规则，可拦截 99%[^1] 的 Web 广告！
 
 > [!TIP]
-> 本仓库通过 [ad-filters-subscriber](https://github.com/fordes123/ad-filters-subscriber/) 构建，定时合并多个优质上游规则，并去除重复和失效项。  
-> 构建和转换错误请反馈至 [此处](https://github.com/fordes123/ad-filters-subscriber/issues)，误杀和规则推荐请提交至本仓库 [issues](https://github.com/xndeye/adblock_list/issues)
+> 本项目定时合并多个优质上游规则，并进行去重和转换，  
+> 因此推荐单独订阅本仓库规则，**禁用广告拦截器内置的规则列表**以获得最佳的性能和体验。
+
+> [!WARNING]
+> Chrome、Edge 等浏览器已放弃 MV2，原则上也不支持本仓库规则，  
+> 请及时检查广告拦截器是否正常工作，推荐改用 Firefox、Brave 浏览器！
 
 | 文件            | 说明                                    | github               | ghproxy                  | jsdelivr                  |
 |-----------------|:----------------------------------------|:--------------------:|:------------------------:|:-------------------------:|
