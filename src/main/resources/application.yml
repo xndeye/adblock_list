@@ -1,8 +1,0 @@
-micronaut:
-  application:
-    name: adfs
-    default-charset: UTF-8
-
-logger:
-  levels:
-    dev.fordes.adfs: INFO
