@@ -5,33 +5,38 @@ adfs:
 
   input:
 
+    - name: AdGuard 基础过滤器
+      path: https://filters.adtidy.org/extension/chromium/filters/2_optimized.txt
+      type: adblock
+      dialect: adguard
+  
     - name: AdGuard 移动广告过滤器
-      path: https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_11_Mobile/filter.txt
+      path: https://filters.adtidy.org/extension/chromium/filters/11_optimized.txt
       type: adblock
       dialect: adguard
-
-    - name: AdGuard 防跟踪保护过滤器
-      path: https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_3_Spyware/filter.txt
-      type: adblock
-      dialect: adguard
-
+  
+    # - name: AdGuard 防跟踪保护过滤器
+    #   path: https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_3_Spyware/filter.txt
+    #   type: adblock
+    #   dialect: adguard
+  
     - name: AdGuard URL跟踪过滤器
-      path: https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_17_TrackParam/filter.txt
+      path: https://filters.adtidy.org/extension/chromium/filters/17_optimized.txt
       type: adblock
       dialect: adguard
-
+  
     - name: AdGuard 恼人广告过滤器
-      path: https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_14_Annoyances/filter.txt
+      path: https://filters.adtidy.org/extension/chromium/filters/14_optimized.txt
       type: adblock
       dialect: adguard
-
+  
     - name: AdGuard 解除搜索广告和自我推销过滤器
-      path: https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_10_Useful/filter.txt
+      path: https://filters.adtidy.org/extension/chromium/filters/10_optimized.txt
       type: adblock
       dialect: adguard
-
+  
     - name: AdGuard 中文过滤器
-      path: https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_224_Chinese/filter.txt
+      path: https://filters.adtidy.org/extension/chromium/filters/224_optimized.txt
       type: adblock
       dialect: adguard
 
@@ -55,41 +60,45 @@ adfs:
       type: adblock
       dialect: adguard
 
-    - name: cjxlist annoyance
-      path: https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt
-      type: adblock
-      dialect: adguard
+    # - name: cjxlist annoyance
+    #   path: https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt
+    #   type: adblock
+    #   dialect: adguard
 
-    - name: EasyList China+EasyList
-      path: https://easylist-downloads.adblockplus.org/easylistchina+easylist.txt
-      type: adblock
-      dialect: abp
+    # - name: EasyList China+EasyList
+    #   path: https://easylist-downloads.adblockplus.org/easylistchina+easylist.txt
+    #   type: adblock
+    #   dialect: abp
 
     - name: ABP filters
       path: https://easylist-downloads.adblockplus.org/abp-filters-anti-cv.txt
       type: adblock
       dialect: abp
 
-    - name: uBlockOrigin privacy
-      path: https://raw.githubusercontent.com/uBlockOrigin/uAssets/refs/heads/master/filters/privacy.txt
-      type: adblock
-      dialect: ubo
+    # - name: uBlockOrigin privacy
+    #   path: https://raw.githubusercontent.com/uBlockOrigin/uAssets/refs/heads/master/filters/privacy.txt
+    #   type: adblock
+    #   dialect: ubo
 
     - name: Telemetry Lists - Aggregated
       path: https://raw.githubusercontent.com/SystemJargon/filters/refs/heads/main/telemetry.txt
       type: dns
       dialect: adguard
 
-    - name: '1Hosts Lite'
-      path: 'https://raw.githubusercontent.com/badmojr/1Hosts/master/Lite/adblock.txt'
+    # - name: '1Hosts Lite'
+    #   path: 'https://raw.githubusercontent.com/badmojr/1Hosts/master/Lite/adblock.txt'
+    #   type: adblock
+    #   dialect: core
+
+    - name: HaGeZi Pro++ Mini
+      path: https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/adblock/pro.plus.mini.txt
       type: adblock
-      dialect: core
+      dialect: adguard
 
     - name: 'xndeye private adblock list'
       path: 'rule/private.txt'
       type: adblock
       dialect: adguard
-
 
   output:
     - name: easylist.txt
