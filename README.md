@@ -92,24 +92,25 @@
 <details>
 <summary>点击查看上游规则</summary>
 <ul>
-    <li><a href="https://filters.adtidy.org/extension/ublock/filters/2_optimized.txt"><del>AdGuard 基础过滤器</del></a></li>
-    <li><a href="https://filters.adtidy.org/extension/ublock/filters/11_optimized.txt">AdGuard 移动广告过滤器</a></li>
-    <li><a href="https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt">AdGuard 防跟踪保护过滤器</a></li>
-    <li><a href="https://filters.adtidy.org/extension/ublock/filters/17_optimized.txt">AdGuard URL跟踪过滤器</a></li>
-    <li><a href="https://filters.adtidy.org/extension/ublock/filters/14_optimized.txt">AdGuard 恼人广告过滤器</a></li>
-    <li><a href="https://filters.adtidy.org/extension/ublock/filters/10_optimized.txt">AdGuard 解除搜索广告和自我推销过滤器</a></li>
-    <li><a href="https://filters.adtidy.org/extension/ublock/filters/224_optimized.txt">AdGuard 中文过滤器</a></li>
-    <li><a href="https://github.com/TG-Twilight/AWAvenue-Adblock-Rule">AWAvenue-Adblock-Rule</a></li>
+    <li><a href="https://filters.adtidy.org/extension/ublock/filters/2_optimized.txt">AdGuard 基础过滤器 (优化版)</a></li>
+    <li><a href="https://filters.adtidy.org/extension/ublock/filters/11_optimized.txt">AdGuard 移动广告过滤器 (优化版)</a></li>
+    <li><a href="https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt"><del>AdGuard 防跟踪保护过滤器 (优化版)</del></a></li>
+    <li><a href="https://filters.adtidy.org/extension/ublock/filters/17_optimized.txt">AdGuard URL跟踪过滤器 (优化版)</a></li>
+    <li><a href="https://filters.adtidy.org/extension/ublock/filters/14_optimized.txt">AdGuard 恼人广告过滤器 (优化版)</a></li>
+    <li><a href="https://filters.adtidy.org/extension/ublock/filters/10_optimized.txt">AdGuard 解除搜索广告和自我推销过滤器 (优化版)</a></li>
+    <li><a href="https://filters.adtidy.org/extension/ublock/filters/224_optimized.txt">AdGuard 中文过滤器 (优化版)</a></li>
+    <li><a href="https://github.com/TG-Twilight/AWAvenue-Adblock-Rule">AWAvenue-Adblock-Rule (完整)</a></li>
     <li><a href="https://raw.githubusercontent.com/Noyllopa/NoAppDownload/master/NoAppDownload.txt">NoAppDownload</a></li>
-    <li><a href="https://github.com/xndeye/web-ad-rule"><del>xndeye/web-ad-rule</del></a></li>
-    <li><a href="https://github.com/xinggsf/Adblock-Plus-Rule">xinggsf/Adblock-Plus-Rule</a></li>
+    <li><a href="https://github.com/xndeye/web-ad-rule"><del>xndeye/web-ad-rule</del></a> (已由本地规则替代)</li>
+    <li><a href="https://github.com/xinggsf/Adblock-Plus-Rule">xinggsf/Adblock-Plus-Rule(movie)</a></li>
     <li><a href="https://github.com/damengzhu/banad"><del>damengzhu/banad</del></a></li>
-    <li><a href="https://github.com/cjx82630/cjxlist">cjx82630/cjxlist</a></li>
-    <li><a href="https://easylist-downloads.adblockplus.org/easylistchina+easylist.txt">ABP EasyList China+EasyList</a></li>
-    <li><a href="https://easylist-downloads.adblockplus.org/abp-filters-anti-cv.txt">ABP filters</a></li>
-    <li><a href="https://raw.githubusercontent.com/uBlockOrigin/uAssets/refs/heads/master/filters/privacy.txt">uBlockOrigin privacy</a></li>
+    <li><a href="https://github.com/cjx82630/cjxlist"><del>cjx82630/cjxlist</del></a></li>
+    <li><a href="https://easylist-downloads.adblockplus.org/easylistchina+easylist.txt"><del>ABP EasyList China+EasyList</del></a></li>
+    <li><a href="https://easylist-downloads.adblockplus.org/abp-filters-anti-cv.txt">ABP filters(anti-cv)</a></li>
+    <li><a href="https://raw.githubusercontent.com/uBlockOrigin/uAssets/refs/heads/master/filters/privacy.txt"><del>uBlockOrigin privacy</del></a></li>
     <li><a href="https://github.com/SystemJargon/filters">Telemetry Lists</a></li>
-    <li><a href="https://github.com/badmojr/1Hosts">1Hosts Lite</a></li>
+    <li><a href="https://github.com/badmojr/1Hosts"><del>1Hosts Lite</del></a></li>
+    <li><a href="https://github.com/hagezi/dns-blocklists">HaGeZi dns-blocklists(Pro++ Mini)</a></li>
 </ul>
 </details>
 

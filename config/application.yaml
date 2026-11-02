@@ -16,7 +16,7 @@ adfs:
       dialect: adguard
   
     # - name: AdGuard 防跟踪保护过滤器
-    #   path: https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_3_Spyware/filter.txt
+    #   path: https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
     #   type: adblock
     #   dialect: adguard
   
@@ -47,11 +47,6 @@ adfs:
 
     - name: NoAppDownload
       path: https://raw.githubusercontent.com/Noyllopa/NoAppDownload/master/NoAppDownload.txt
-      type: adblock
-      dialect: adguard
-
-    - name: xndeye web-ad-rule
-      path: https://raw.githubusercontent.com/xndeye/web-ad-rule/master/easylist.txt
       type: adblock
       dialect: adguard
 
