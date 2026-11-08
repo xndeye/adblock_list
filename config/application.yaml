@@ -149,6 +149,8 @@ adfs:
         - "assets.msn.com"
         # 华为应用商店相关域名
         - "store-drcn.hispace.dbankcloud.com"
+        # 屏蔽此域名会导致小米部分服务异常
+        - "api.comm.miui.com"
 
     conversion:
       allow-expansion: false
